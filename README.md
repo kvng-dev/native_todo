@@ -38,35 +38,40 @@ A feature-rich, cross-platform To-Do List application built with React Native, T
 ### Setup Instructions
 
 1. **Clone the repository**
-      \`\`\`bash
-      git clone <repository-url>
-      cd react-native-todo-app
-      \`\`\`
+   
+            \`\`\`bash
+            git clone <repository-url>
+            cd react-native-todo-app
+            \`\`\`
 
-2. **Install dependencies**
-   \`\`\`bash
-   npm install
+3. **Install dependencies**
+   
+               \`\`\`bash
+               npm install
+            
+               # or
+            
+               yarn install
+               \`\`\`
 
-   # or
+4. **iOS Setup** (macOS only)
+   
+               \`\`\`bash
+               cd ios && pod install && cd ..
+               \`\`\`
 
-   yarn install
-   \`\`\`
+5. **Start Metro bundler**
+   
+               \`\`\`bash
+               npm start
+            
+               # or
+            
+               yarn start
+               \`\`\`
 
-3. **iOS Setup** (macOS only)
-   \`\`\`bash
-   cd ios && pod install && cd ..
-   \`\`\`
-
-4. **Start Metro bundler**
-   \`\`\`bash
-   npm start
-
-   # or
-
-   yarn start
-   \`\`\`
-
-5. **Run the app**
+6. **Run the app**
+   
                         \`\`\`bash
                      
                         # For Android
@@ -110,27 +115,27 @@ A feature-rich, cross-platform To-Do List application built with React Native, T
 
 ## Project Structure
 
-\`\`\`
-src/
-├── components/ # Reusable UI components
-│ └── TaskItem.tsx # Individual task component
-├── context/ # React Context providers
-│ ├── TaskContext.tsx # Task state management
-│ └── ThemeContext.tsx# Theme state management
-├── screens/ # Main app screens
-│ ├── TaskListScreen.tsx
-│ └── AddTaskScreen.tsx
-├── styles/ # Styling and themes
-│ └── colors.ts # Color definitions
-├── types/ # TypeScript type definitions
-│ └── Task.ts # Task interface
-├── layouts/ # Layout components
-│ └── RootLayout.tsx # Root navigation layout
-└── **tests**/ # Unit tests
-├── components/
-├── context/
-└── setup.ts
-\`\`\`
+            \`\`\`
+            src/
+            ├── components/ # Reusable UI components
+            │ └── TaskItem.tsx # Individual task component
+            ├── context/ # React Context providers
+            │ ├── TaskContext.tsx # Task state management
+            │ └── ThemeContext.tsx# Theme state management
+            ├── screens/ # Main app screens
+            │ ├── TaskListScreen.tsx
+            │ └── AddTaskScreen.tsx
+            ├── styles/ # Styling and themes
+            │ └── colors.ts # Color definitions
+            ├── types/ # TypeScript type definitions
+            │ └── Task.ts # Task interface
+            ├── layouts/ # Layout components
+            │ └── RootLayout.tsx # Root navigation layout
+            └── **tests**/ # Unit tests
+            ├── components/
+            ├── context/
+            └── setup.ts
+            \`\`\`
 
 ## Technologies Used
 
@@ -146,32 +151,32 @@ src/
 
 Run the test suite:
 
-\`\`\`bash
-
-# Run all tests
-
-npm test
-
-# or
-
-yarn test
-
-# Run tests in watch mode
-
-npm run test:watch
-
-# or
-
-yarn test:watch
-
-# Generate coverage report
-
-npm run test:coverage
-
-# or
-
-yarn test:coverage
-\`\`\`
+            \`\`\`bash
+            
+            # Run all tests
+            
+            npm test
+            
+            # or
+            
+            yarn test
+            
+            # Run tests in watch mode
+            
+            npm run test:watch
+            
+            # or
+            
+            yarn test:watch
+            
+            # Generate coverage report
+            
+            npm run test:coverage
+            
+            # or
+            
+            yarn test:coverage
+            \`\`\`
 
 ### Test Coverage
 
@@ -217,19 +222,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Common Issues
 
 **Metro bundler issues:**
-\`\`\`bash
-npm start -- --reset-cache
-\`\`\`
 
-**Android build issues:**
-\`\`\`bash
-cd android && ./gradlew clean && cd ..
-\`\`\`
-
-**iOS build issues:**
-\`\`\`bash
-cd ios && rm -rf Pods && pod install && cd ..
-\`\`\`
+            \`\`\`bash
+            npm start -- --reset-cache
+            \`\`\`
+            
+            **Android build issues:**
+            \`\`\`bash
+            cd android && ./gradlew clean && cd ..
+            \`\`\`
+            
+            **iOS build issues:**
+            \`\`\`bash
+            cd ios && rm -rf Pods && pod install && cd ..
+            \`\`\`
 
 ### Support
 
