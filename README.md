@@ -38,10 +38,10 @@ A feature-rich, cross-platform To-Do List application built with React Native, T
 ### Setup Instructions
 
 1. **Clone the repository**
-   \`\`\`bash
-   git clone <repository-url>
-   cd react-native-todo-app
-   \`\`\`
+      \`\`\`bash
+      git clone <repository-url>
+      cd react-native-todo-app
+      \`\`\`
 
 2. **Install dependencies**
    \`\`\`bash
@@ -67,24 +67,24 @@ A feature-rich, cross-platform To-Do List application built with React Native, T
    \`\`\`
 
 5. **Run the app**
-   \`\`\`bash
-
-   # For Android
-
-   npm run android
-
-   # or
-
-   yarn android
-
-   # For iOS (macOS only)
-
-   npm run ios
-
-   # or
-
-   yarn ios
-   \`\`\`
+                        \`\`\`bash
+                     
+                        # For Android
+                     
+                        npm run android
+                     
+                        # or
+                     
+                        yarn android
+                     
+                        # For iOS (macOS only)
+                     
+                        npm run ios
+                     
+                        # or
+                     
+                        yarn ios
+                        \`\`\`
 
 ## Usage
 
