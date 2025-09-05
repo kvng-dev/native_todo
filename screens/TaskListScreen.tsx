@@ -238,7 +238,7 @@ const TaskListScreen = () => {
 
     return (
       <View style={styles.sortContainer}>
-        <Text>Sort By:</Text>
+        <Text style={dynamicStyles.sortButtonText}>Sort By:</Text>
         <TouchableOpacity
           style={dynamicStyles.sortButton}
           onPress={() => setSortBy(getNextSortMode())}

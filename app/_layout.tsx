@@ -4,6 +4,7 @@ import AddTaskScreen from "@/screens/AddTask";
 import TaskListScreen from "@/screens/TaskListScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StatusBar } from "react-native";
+process.env.EXPO_ROUTER_APP_ROOT = "../../app";
 
 export type RootStackParamList = {
   TaskList: undefined;
@@ -36,7 +37,7 @@ const NavigationContent = () => {
         <Stack.Screen
           name="TaskList"
           component={TaskListScreen}
-          options={{ title: "My Tasks" }}
+          options={{ title: "My Tasks 📚" }}
         />
         <Stack.Screen
           name="AddTask"
